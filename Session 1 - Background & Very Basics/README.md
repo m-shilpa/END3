@@ -115,15 +115,17 @@ Now, after reading this technique a new question comes to mind: “What happens 
 
 #### 1.4.3.1. (a) Vanishing gradients:
 
-- For any activation function, abs(dW) will get smaller and smaller as we go backward with every layer during backpropagation especially in the case of deep neural networks. So, in this case, the earlier layers’ weights are adjusted slowly.
+- For any activation function, abs(dW) will get smaller and smaller as we go backward with every layer during backpropagation especially in the case of deep neural networks. So, in this case, `the earlier layers’ weights are adjusted slowly`.
 - Due to this, the weight update is minor which results in slower convergence.
-- This makes the optimization of our loss function slow. It might be possible in the worst case, this may completely stop the neural network from training further.
+- This makes the optimization of our loss function slow. It might be possible in the worst case, this `may completely stop the neural network from training further`.
 - More specifically, in the case of the sigmoid and tanh and activation functions, if your weights are very large, then the gradient will be vanishingly small (because the derivative of tanh or sigmoid, close to its output value of '1', is very small), effectively preventing the weights from changing their value. This is because abs(dW) will increase very slightly or possibly get smaller and smaller after the completion of every iteration.
 - So, here comes the use of the `RELU activation function` in which `vanishing gradients are generally not a problem` as the gradient is 0 for negative (and zero) values of inputs and 1 for positive values of inputs.
 #### 1.4.3.2. (b) Exploding gradients : 
 
 - This is the exact opposite case of the vanishing gradients, which we discussed above.
-- Consider we have weights that are non-negative, large, and having small activations A. When these weights are multiplied along with the different layers, they cause a very large change in the value of the overall gradient (cost). This means that the changes in W, given by the equation `W= W — ⍺ * dW` ( ⍺ is the learning rate), will be in huge steps, the downward moment will increase.
+- Consider we have weights that are non-negative, large, and having small activations A. When these weights are multiplied along with the different layers, they cause a very large change in the value of the overall gradient (cost). This means that `the changes in W, given by the equation W= W — ⍺ * dW ( ⍺ is the learning rate), will be in huge steps`, the downward moment will increase.
+
+In summary, Weights can be initialized with random values, except with too close to zero values.
 
 for further details see: <https://www.analyticsvidhya.com/blog/2021/05/how-to-initialize-weights-in-neural-networks/>
 
