@@ -54,7 +54,7 @@ Let’s compare this model to the biological neuron. The inputs are analogous to
 [https://pythonmachinelearning.pro/perceptrons-the-first-neural-networks/](https://pythonmachinelearning.pro/perceptrons-the-first-neural-networks/)
 ## 1.3. What is the use of the learning rate?
 
-Learning rate is a hyper-parameter that controls how much we are adjusting the weights of our network with respect the loss gradient (computed using the chain rule: the partial derivative of ). The lower the value, the slower we travel along the downward slope. While this might be a good idea (using a low learning rate) in terms of making sure that we do not miss any local minima, it could also mean that we’ll be taking a long time to converge — especially if we get stuck on a plateau region.
+Learning rate is a hyper-parameter that controls how much we are adjusting the weights of our network with respect the loss gradient (computed using the chain rule: the partial derivative of loss wrt weight). The lower the value, the slower we travel along the downward slope. While this might be a good idea (using a low learning rate) in terms of making sure that we do not miss any local minima, it could also mean that we’ll be taking a long time to converge — especially if we get stuck on a plateau region.
 
 The following formula shows the relationship.
 
@@ -131,7 +131,7 @@ for further details see: <https://www.analyticsvidhya.com/blog/2021/05/how-to-in
 
 Deep learning neural networks are trained using the stochastic gradient descent optimization algorithm.
 
-As part of the optimization algorithm, the error for the current state of the model must be estimated repeatedly. This requires the choice of an error function, conventionally called a **loss function, that can be used to estimate the loss of the model so that the weights can be updated to reduce the loss on the next evaluation**.
+As part of the optimization algorithm, the error for the current state of the model must be estimated repeatedly. This requires the choice of an error function, conventionally called a `loss function, that can be used to estimate the loss of the model so that the weights can be updated to reduce the loss on the next evaluation`.
 
 Neural network models learn a mapping from inputs to outputs from examples and the choice of loss function must match the framing of the specific predictive modeling problem, such as classification or regression. Further, the configuration of the output layer must also be appropriate for the chosen loss function.
 
@@ -163,7 +163,7 @@ for further details see
 
 ## 1.6. What is the "chain rule" in gradient flow?
 
-The **chain rule** is used to compute the partial derivative of the loss wrt to the weights.  This computed partial dervitive or gradient is used to adjust the weights during backpropogation using the formula below..
+The ``chain rule`` is used to compute the partial derivative of the loss wrt to the weights.  This computed partial dervitive or gradient is used to adjust the weights during backpropogation using the formula below..
 
 `new_weight = existing_weight — learning_rate * gradient`
 
@@ -171,7 +171,7 @@ The **chain rule** is used to compute the partial derivative of the loss wrt to 
 
 ![picture 12](images/70ae9e2ad487287ca87eb7f61a46434a7169dc0c87ee29035fec82d808cd6164.png)  
 
-Let's take a moment to examine how we could express the relationship between J(θ) and θ2. Note how θ2 is an input to z(3), which is an input to a(3), which is an input to J(θ). When we're trying to compute a derivative of this sort, we can use the **chain rule** to solve.
+Let's take a moment to examine how we could express the relationship between J(θ) and θ2. Note how θ2 is an input to z(3), which is an input to a(3), which is an input to J(θ). When we're trying to compute a derivative of this sort, we can use the ``chain rule`` to solve.
 
 As a reminder, the chain rule states:
 ![picture 13](images/a5fa78206465103c4fccecd61a3e1d4dbb2e24ec1cfe4c3c180f255ec2703db4.png)  
