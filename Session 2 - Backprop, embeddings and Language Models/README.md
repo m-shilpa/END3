@@ -1,3 +1,10 @@
+## Team
+
+- Shilpa M
+- Shailesh J
+- Prathyusha Kanakam
+- Raja Rajendran
+
 # Backpropagation in a Feed Forward Network
 
 Feedforward neural networks were among the first and most successful learning algorithms. They are also called deep networks, multi-layer perceptron (MLP), or simply neural networks. As data travels through the network’s artificial mesh, each layer processes an aspect of the data, filters outliers, spots familiar entities and produces the final output.
@@ -200,3 +207,6 @@ These 4 steps make one epoch. The model is trained for multiple epochs to get th
 The below plot showing the change in Error as Learning Rate changes:
 ![image](https://github.com/m-shilpa/END3/blob/main/Session%202%20-%20Backprop%2C%20embeddings%20and%20Language%20Models/images/error_change_for_lr.png)
 
+Screenshot of Excel file for Assignment:
+
+![image](https://github.com/m-shilpa/END3/blob/main/Session%202%20-%20Backprop%2C%20embeddings%20and%20Language%20Models/images/excel_file_screenshot.PNG)
