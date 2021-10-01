@@ -1,11 +1,19 @@
-## Team
+- [1. Backpropagation in a Feed Forward Network](#1-backpropagation-in-a-feed-forward-network)
+  - [1.1. Training a Feed Forward Network](#11-training-a-feed-forward-network)
+    - [1.1.1. Step 1: Forward Propagation](#111-step-1-forward-propagation)
+    - [1.1.2. Step 2: Error](#112-step-2-error)
+    - [1.1.3. Step 3: Backpropagation](#113-step-3-backpropagation)
+    - [1.1.4. Step 4: Updating the weights](#114-step-4-updating-the-weights)
+    - [1.1.5. Screenshot for LR vs Error](#115-screenshot-for-lr-vs-error)
+    - [1.1.6. Screenshot of Excel file for Assignment:  Training an NN using Backpropogation](#116-screenshot-of-excel-file-for-assignment--training-an-nn-using-backpropogation)
+## 0.1. Team
 
 - Shilpa M
 - Shailesh J
 - Prathyusha Kanakam
 - Raja Rajendran
 
-# Backpropagation in a Feed Forward Network
+# 1. Backpropagation in a Feed Forward Network
 
 Feedforward neural networks were among the first and most successful learning algorithms. They are also called deep networks, multi-layer perceptron (MLP), or simply neural networks. As data travels through the network’s artificial mesh, each layer processes an aspect of the data, filters outliers, spots familiar entities and produces the final output.
 
@@ -22,11 +30,11 @@ Below is a simple 2 layered Feed Forward Network :
 
 We will use this network as reference for our calculations.
 
-## Training a Feed Forward Network 
+## 1.1. Training a Feed Forward Network 
 
 The Feed Forward Network takes the following steps for training:
 
-### Step 1: Forward Propagation
+### 1.1.1. Step 1: Forward Propagation
 
 In the Forward Propagation, as the name suggests, the input data is fed in the forward direction through the network. Each hidden layer accepts the input data, processes it as per the activation function and passes to the successive layer.
 
@@ -63,7 +71,7 @@ a_o1 = σ(o1)
 a_o2 = σ(o2)
 ```
 
-### Step 2: Error
+### 1.1.2. Step 2: Error
 
 Error tells us how far our model predictions are from the actual output. The simplest way to find this is as follows:
 
@@ -85,7 +93,7 @@ E_T = E1 + E2
 
 We need to minimize this error E_T. To minimise this error we need to change the values which were involved in arriving at this error. These are the input, weights and bias. The input is fixed and hence cannot be changed. So, to minimize the error, we should optimise our model parameters which are the weights and bias. This is performed during backpropagation.
 
-### Step 3: Backpropagation
+### 1.1.3. Step 3: Backpropagation
 
 Backpropagation is the essence of neural network training. It is the method of fine-tuning the weights of a neural network based on the error rate obtained in the previous epoch (i.e., iteration). Proper tuning of the weights allows you to reduce error rates and make the model reliable by increasing its generalization.
 
@@ -189,7 +197,7 @@ Similarly,
 ∂E_T/∂w4 = (((a_o1 - t1) * a_o1 * (1-a_o1) * w6) + ((a_o2 - t2) * a_o2 * (1-a_o2) * w8)) * a_h2 * (1-a_h2) * i2
 ```
 
-### Step 4: Updating the weights
+### 1.1.4. Step 4: Updating the weights
 Finally, we update the weights using the gradients were just calculated
 ```
 w1 = w1 - LR * (∂E_T/∂w1)
@@ -204,9 +212,15 @@ w8 = w8 - LR * (∂E_T/∂w8)
 
 These 4 steps make one epoch. The model is trained for multiple epochs to get the best accuracy.
 
+### 1.1.5. Screenshot for LR vs Error
 The below plot showing the change in Error as Learning Rate changes:
+
+![picture 2](images/0adb1d69c91cb84a99a9a3c1655f93719ef011cbad63613779ee3fabf034904d.png)  
+
 ![image](https://github.com/m-shilpa/END3/blob/main/Session%202%20-%20Backprop%2C%20embeddings%20and%20Language%20Models/images/error_change_for_lr.png)
 
-Screenshot of Excel file for Assignment:
+### 1.1.6. Screenshot of Excel file for Assignment:  Training an NN using Backpropogation
+
+![picture 1](images/9f2bfb57860dcf5c8a5936483fe26c03c14604e980e40df37c23a5f2366d08f5.png)  
 
 ![image](https://github.com/m-shilpa/END3/blob/main/Session%202%20-%20Backprop%2C%20embeddings%20and%20Language%20Models/images/excel_file_screenshot.PNG)
