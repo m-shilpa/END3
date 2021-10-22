@@ -8,6 +8,13 @@
   - [1.7. training MUST happen on the GPU](#17-training-must-happen-on-the-gpu)
   - [1.8. short training log](#18-short-training-log)
 
+## 0.1. Team
+
+- Shilpa M
+- Shailesh J
+- Prathyusha Kanakam
+- Raja Rajendran
+
 # 1. Neural Network to classify digits and perform addition
 
 ## 1.1. Model for digit classification and addition
