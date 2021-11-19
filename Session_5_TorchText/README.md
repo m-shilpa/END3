@@ -5,7 +5,7 @@
 
 ## 0.1. Team
 
-- Shilpa
+- Shilpa M
 - Shailesh J
 - Prathyusha Kanakam
 - Raja Rajendran
@@ -20,7 +20,7 @@
 ### 1.2 Text Classification:
 **Goal:** The dataset is used to classify reviews as positive or negative.
 
-**Stats** ([Link to colab](https://github.com/m-shilpa/END3/blob/main/Session_5_TorchText/S5_TorchText_AmazonReviewPolarity.ipynb)):
+**Stats** ([Link to colab](S5_TorchText_AmazonReviewPolarity.ipynb)):
 
 * No. of epochs: 10   
 * Train Accuracy: 91.46%  
@@ -30,4 +30,4 @@
   1. Negative: 90.98%
   2. Positive: 91.25%
 * The trend in the accuracy for the train and validation dataset:    
-  ![Accuracy Trend](https://github.com/m-shilpa/END3/blob/main/Session_5_TorchText/images/s5_accuracy_trend.png)
+  ![Accuracy Trend](images/accuracy_trend.png)
