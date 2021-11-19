@@ -1,7 +1,7 @@
-- [0.1. Team](#team)
-- [1. Dataset 1 : Amazon Reviews Polarity](#dataset1_amazon_reviews_polarity)
-  - [1.1 Dataset](#dataset1_amazon_reviews_polarity_details)   
-  - [1.2 Text Classification](#text_classification)
+- [0.1. Team](#01-team)
+- [1. Dataset 1 : Amazon Reviews Polarity](#1-dataset-1--amazon-reviews-polarity)
+  - [1.1 Dataset](#11-dataset)   
+  - [1.2 Text Classification](#12-text-classification)
 
 ## 0.1. Team
 
